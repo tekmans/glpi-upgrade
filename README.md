@@ -5,7 +5,7 @@ Grab your url of the GLPI version needed https://github.com/glpi-project/glpi/re
 
 #### HOWTO ####
 
-`# sh glpi-upgrade.sh https://github.com/glpi-project/glpi/releases/download/0.90/glpi-0.90.tar.gz`
+`# sh glpi-upgrade.sh https://github.com/glpi-project/glpi/releases/download/X.XX/glpi-X.XX.tar.gz`
 
 To end the upgrade go to http://ipserver/glpi
 

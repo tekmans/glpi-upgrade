@@ -11,10 +11,10 @@ iERSION=${TARGZ%.tar*}
 if [ -z "$1" ]
   then
     echo ""
-    echo "$(tput setaf 1)===== L'url de téléchargement de glpi est manquante$(tput sgr 0)"
+    echo "$(tput setaf 1)===== GLPI download url is missing$(tput sgr 0)"
     echo ""
-    echo "===== Allez sur https://github.com/glpi-project/glpi/releases"
-    echo "===== Exemple : ./glpi-upgrade.sh https://github.com/glpi-project/glpi/releases/download/0.90/glpi-0.90.tar.gz"
+    echo "===== Go to https://github.com/glpi-project/glpi/releases"
+    echo "===== Ex : ./glpi-upgrade.sh https://github.com/glpi-project/glpi/releases/download/X.XX/glpi-X.XX.tar.gz"
     echo ""
     exit
 fi
