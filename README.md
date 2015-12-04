@@ -1,5 +1,5 @@
 ## GLPI upgrade script ##
-Silently upgrade glpi installation with tar package
+Silently upgrade glpi installation (from debian package) with tar package
 
 Grab your url of the GLPI version needed https://github.com/glpi-project/glpi/releases
 
