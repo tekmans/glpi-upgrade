@@ -22,8 +22,8 @@ echo "$(tput setaf 2)===== Mise à jour de GLPI $(tput sgr 0)"
 echo ""
 
 echo "===== Donwloading GLPI "$VERSION
-[ ! -f /tmp/$TARGZ ] && wget $1 -O /tmp/$TARGZ && tar vxf /tmp/$TARGZ -C /opt/ || tar xf /tmp/$TARGZ -C /opt/
-[ $? -eq 0 ] && echo "$(tput setaf 2)[ OK ] $(tput sgr 0)"|| echo "$(tput setaf 1)[ FAILED ] $(tput sgr 0)" exit
+[ ! -f /tmp/$TARGZ ] && wget --no-check-certificate $1 -O /tmp/$TARGZ && tar vxf /tmp/$TARGZ -C /opt/ || tar xf /tmp/$TARGZ -C /opt/
+[ $? -eq 0 ] && echo "$(tput setaf 2)[ OK ] $(tput sgr 0)"|| `echo "$(tput setaf 1)[ FAILED ] $(tput sgr 0)" && exit`
 
 echo "===== Copy config directory"
 cp -rf /etc/glpi/config/config_db.php /opt/glpi/config
